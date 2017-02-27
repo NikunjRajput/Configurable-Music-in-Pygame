@@ -18,7 +18,7 @@ The game starts with minimum speed for the cube as well as the slider. Whenever 
  
 B.	Time Scaling
 Time scaling/ time stretching is a process in which the speed or duration of an audio signal is changed without affecting its pitch. For example time scaling should sound like the music file is being played with higher speed or lower speed based on the time scale given, without any change in the tuning. 
-   	When a music signal is simply played fast, i.e. by lowering its sampling rate but by playing it at the same old sampling rate, the fundamental frequency of that signal changes. This is against the concept of time scaling, which happens without changing the fundamental frequency (Pitch).
+   When a music signal is simply played fast, i.e. by lowering its sampling rate but by playing it at the same old sampling rate, the fundamental frequency of that signal changes. This is against the concept of time scaling, which happens without changing the fundamental frequency (Pitch).
 
 
 
