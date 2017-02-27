@@ -11,7 +11,7 @@ A.	PyGame
 PyGame is a set of modules in Python used to design games and different user interfaces. In this project PyGame is used to design a simple slider-cube game and a user interface. The user interface is shown in figure (1). As seen from the user interface the user can choose from tree different music files. The number of music files can be increased by making small changes in the python script. 
 There are 3 different time scales to manipulate the music files, from which the user can choose. The slow button represents time scale of 3, medium button represents to time scale 4 and fast button represents time scale 5. The user can select any three of these different combinations and our script will append these three music files with their requested timescales and that appended music file will get played as a background music for the slider and cube game.
 
-
+![dspimage1](https://cloud.githubusercontent.com/assets/22282617/23351352/9dbe9176-fc8e-11e6-8d20-84fcba5f9db0.jpg)
 
 The game starts with minimum speed for the cube as well as the slider. Whenever the cube passes the slider, it is considered as a hit and after every two hits the level is changed (for demoing purpose the level was changed just after two hits). Figure(2) shows the interface of our game. 
 
