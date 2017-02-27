@@ -12,22 +12,24 @@ PyGame is a set of modules in Python used to design games and different user int
 There are 3 different time scales to manipulate the music files, from which the user can choose. The slow button represents time scale of 3, medium button represents to time scale 4 and fast button represents time scale 5. The user can select any three of these different combinations and our script will append these three music files with their requested timescales and that appended music file will get played as a background music for the slider and cube game.
 
 ![dspimage1](https://cloud.githubusercontent.com/assets/22282617/23351352/9dbe9176-fc8e-11e6-8d20-84fcba5f9db0.jpg)
-
-The game starts with minimum speed for the cube as well as the slider. Whenever the cube passes the slider, it is considered as a hit and after every two hits the level is changed (for demoing purpose the level was changed just after two hits). Figure(2) shows the interface of our game. 
-![dspimage3](https://cloud.githubusercontent.com/assets/22282617/23351548/d8d660bc-fc8f-11e6-996e-e987d0da83e9.jpg)
+Figure1
 
 ![dspimage2](https://cloud.githubusercontent.com/assets/22282617/23351547/d8d62160-fc8f-11e6-9e28-119c0a92a444.jpg)
+Figure2
+
+The game starts with minimum speed for the cube as well as the slider. Whenever the cube passes the slider, it is considered as a hit and after every two hits the level is changed (for demoing purpose the level was changed just after two hits). Figure(2) shows the interface of our game. 
 
 
- 
 B.	Time Scaling
 Time scaling/ time stretching is a process in which the speed or duration of an audio signal is changed without affecting its pitch. For example time scaling should sound like the music file is being played with higher speed or lower speed based on the time scale given, without any change in the tuning. 
    When a music signal is simply played fast, i.e. by lowering its sampling rate but by playing it at the same old sampling rate, the fundamental frequency of that signal changes. This is against the concept of time scaling, which happens without changing the fundamental frequency (Pitch).
 
 
+![dspimage3](https://cloud.githubusercontent.com/assets/22282617/23351548/d8d660bc-fc8f-11e6-996e-e987d0da83e9.jpg)
+Figure 3
 
-	Figure (3) shows the basic concept of time scaling. As shown in the figure the original signal is stretched in time scaling. 
-	Implemented this time scaling technique in python using different libraries in python, such as Pylab, PyAudio, Struct, Scipy etc.
+Figure (3) shows the basic concept of time scaling. As shown in the figure the original signal is stretched in time scaling. 
+Implemented this time scaling technique in python using different libraries in python, such as Pylab, PyAudio, Struct, Scipy etc.
 In time scaling, concept of STFT is used i.e. Short Time Fourier Transform which uses window size for overlapping of signals. In this, a window size is multiplied with each phase of the input signal of the block and an overlap is created between preceding and succeeding signal.
 
 
@@ -35,7 +37,7 @@ Short Time Fourier Transform Implementation:
 
 The Short time Fourier Transform is given as:
 
-               
+![dspimage4](https://cloud.githubusercontent.com/assets/22282617/23351605/210fc878-fc90-11e6-9d3f-dbda74187d97.jpg)
 
 
 In the above equation, the w(n) represents the window size which is used to multiply with input signal. Window function determines the block length of the signal. The window scaled input signal is passed through FFT(Fast Fourier transform) as in code snipped below. The phase difference of both the signals is considered, the one of initial block and the other for overlapping block. The phase difference is then integrated and passed through IIFT(Inverse Fourier Transform) to get the scaled output.
