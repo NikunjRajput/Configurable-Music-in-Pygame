@@ -14,6 +14,10 @@ There are 3 different time scales to manipulate the music files, from which the 
 ![dspimage1](https://cloud.githubusercontent.com/assets/22282617/23351352/9dbe9176-fc8e-11e6-8d20-84fcba5f9db0.jpg)
 
 The game starts with minimum speed for the cube as well as the slider. Whenever the cube passes the slider, it is considered as a hit and after every two hits the level is changed (for demoing purpose the level was changed just after two hits). Figure(2) shows the interface of our game. 
+![dspimage3](https://cloud.githubusercontent.com/assets/22282617/23351548/d8d660bc-fc8f-11e6-996e-e987d0da83e9.jpg)
+
+![dspimage2](https://cloud.githubusercontent.com/assets/22282617/23351547/d8d62160-fc8f-11e6-9e28-119c0a92a444.jpg)
+
 
  
 B.	Time Scaling
